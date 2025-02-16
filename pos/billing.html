@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing System</title>
+    <link rel="stylesheet" href="billing.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Section 1: Categories -->
+        <div class="categories">
+            <h2>Categories</h2>
+            <ul id="categoryList"></ul>
+        </div>
+
+        <!-- Section 2: Items -->
+        <div class="items">
+            <h2>Items</h2>
+            <div id="itemContainer" class="item-grid"></div>
+        </div>
+
+        <!-- Section 3: Bill -->
+        <div class="bill">
+            <h2>Bill</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="billItems"></tbody>
+            </table>
+            <h3>Total Amount: ₵<span id="totalAmount">0.00</span></h3>
+            
+            <button id="checkoutBtn">Checkout</button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
